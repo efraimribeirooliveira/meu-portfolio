@@ -36,7 +36,7 @@ class FormSubmit {
         try {
             this.onSubmission(event)
         await fetch(this.url, {
-          method: "PHOST",
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
