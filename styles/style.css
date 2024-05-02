@@ -1,3 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 1px 10px 1px #000000;
+    height: 70px;
+    width: 100%;
+    padding: 0px 30px;
+    position: fixed;
+}
+
+#nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+#nav ul li a {
+    font-family: var(--poppins);
+    color: #bcbcbc;
+}
+
+#nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#nav ul li a:hover {
+    color: rgb(234, 234, 234);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 17px;
+}
+
+.redes-sociais a i {
+    font-size: 1.6em;
+    color: #a0a0a0;
+}
+
+.redes-sociais a i:hover {
+color: white;
+}
+
+#inicio {
+    background-image: url(../img/img-programmer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo {
+    margin-left: 100px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--poppins);
+}
+
+.conteudo h1 {
+    font-size: 3.7em;
+    color: white;
+}
+
+.conteudo h1 span {
+    color: #a48367;
+}
+
+.conteudo h3 {
+    font-weight: 400;
+    color: rgb(242, 242, 242);
+    font-size: 1.4em;
+}
+
+.conteudo button {
+    width: 45%;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid rgb(249, 249, 249);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.conteudo button:hover {
+    background-color: rgba(128, 128, 128, 0.341);
+}
+
+#i-animation {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    color: rgb(21, 18, 207);
+    font-size: 2em;
+    animation: ianimation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ianimation {
+    0% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(0px);
+    }
+    
 }
