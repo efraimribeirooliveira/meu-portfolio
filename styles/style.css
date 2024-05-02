@@ -14,16 +14,27 @@
 }
 a{
     text-decoration: none;
+    font-family: var(--poppins);
 }
 li {
     list-style: none;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 33, 33);
+    
+}
+
+/* 
+                    |=================|
+                    |    NAVEGAÇÃO    |
+                    |=================|
+*/
 header {
     display: flex;
     justify-content: space-between;
@@ -38,20 +49,24 @@ header {
 
 #nav ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 #nav ul li a {
     font-family: var(--poppins);
     color: #bcbcbc;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 #nav ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #nav ul li a:hover {
-    color: rgb(234, 234, 234);
+    color: rgb(254, 135, 8);
+    background-color: #43413f;
+    border-radius: 5px;
 }
 
 .redes-sociais {
@@ -65,8 +80,14 @@ header {
 }
 
 .redes-sociais a i:hover {
-color: white;
+color: rgb(254, 135, 8);
 }
+
+/* 
+                    |=================|
+                    |      INICIO     |
+                    |=================|
+*/
 
 #inicio {
     background-image: url(../img/img-programmer.jpg);
@@ -127,10 +148,7 @@ color: white;
     left: 50%;
     color: rgb(21, 18, 207);
     font-size: 2em;
-    animation: ianimation;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: ianimation 1.2s linear infinite;
 }
 
 @keyframes ianimation {
@@ -142,4 +160,254 @@ color: white;
         transform: translateY(0px);
     }
     
+}
+
+/* 
+                    |=================|
+                    |       SOBRE     |
+                    |=================|
+*/
+
+.sobre {
+    margin: 60px auto;
+    width: 1500px;
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text h3 {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.text h1 {
+    color: white;
+    font-size: 1.7em;
+    width: 80%;
+}
+
+.text p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(193, 191, 191);
+}
+
+.sobre img {
+    width: 50%;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* 
+                    |=================|
+                    |   EXPERIÊNCIA   |
+                    |=================|
+*/
+
+.exp {
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    height: 500px;
+}
+
+.html, .css, .js {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 60px;
+    border-radius: px;
+}
+
+.html, .js {
+    background-color: rgb(54, 54, 54);
+}
+
+.css {
+    background-image: linear-gradient(to top, rgb(97, 20, 20), rgb(192, 37, 37));
+}
+
+.bxl-html5, .bxl-css3, .bxl-javascript {
+    font-size: 3em;
+}
+
+.html p, .css p, .js p {
+    color: #a0a0a0;
+    width: 100%;
+}
+
+.html a, .js a {
+    color: brown;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.css a {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+div i {
+    font-size: 1.3em;
+  
+}
+
+/* 
+                    |=================|
+                    |   CONTRATE-ME   |
+                    |=================|
+*/
+
+footer {
+    background-color: rgb(45, 45, 45);
+    margin-top: 60px;
+}
+
+footer h1 {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 140px;
+    background-color: rgb(54, 54, 54);
+    width: 90%;
+    margin: auto;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.contato h2 {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+.footer-top .contato i {
+    background-image: linear-gradient(140deg, dodgerblue, rgb(29, 10, 136));
+    padding: 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+
+.form {
+    background-image: linear-gradient(140deg, dodgerblue , rgb(73, 7, 160));
+    width: 260px;
+    height: 280px;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form form input {
+    background-color: rgb(0, 0, 54);
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    border: 0.125rem solid transparent;
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form form input::placeholder, textarea::placeholder {
+    color: rgb(114, 113, 113);
+    font-family: var(--poppins);
+    font-weight: 500;
+}
+
+.form form textarea {
+    background-color: rgb(0, 0, 54);
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    padding: 12px;
+    border-radius: 5px;
+    border: 0.125rem solid transparent;
+    color: white;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    overflow-y: scroll;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.125rem #26344a;
+    
+}
+
+.form form #btn {
+    font-family: var(--poppins);
+    font-weight: 600;
+    background-color: rgb(0, 0, 54);
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.form form #btn:hover,
+.form form #btn:focus {
+    outline: none;
+    background-color: rgb(20, 20, 83)
+}
+
+.form form #btn:disabled {
+    cursor: not-allowed;
+    background-color: #555b69;
+}
+
+.sucess,
+.error {
+    text-align: center;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.error {
+    color: tomato;
 }
